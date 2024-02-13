@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="styles.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tauri App</title>
+	<script type="module" src="/main.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+		<form>
+			<input type="text" placeholder="Search for" id="search-for" />
+			<br>
+			<label for="use-regex">Use regular expressions</label>
+			<input type="checkbox" id="use-regex" name="use-regex" />
+			<br>
+			<label for="match-all">Match all occurences</label>
+			<input type="checkbox" id="match-all" name="match-all" />
+			<br>
+			<label for="case-sensitive">Case sensitive</label>
+			<input type="checkbox" id="case-sensitive" name="case-sensitive" />
+			<br>
+			<input type="text" placeholder="Replace with" id="replace-with" />
+		</form>
+		<br>
+		<button id="test">Test</button>
+	</div>
+</body>
+
+</html>
